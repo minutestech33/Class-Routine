@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+:root {
+    --text-white-200: #d4d4d4;
+    --black-bg-500: rgb(37, 42, 49);
+    --black-bg-600: rgb(32, 36, 43);
+}
+
+*,
+*::after,
+*::before {
+    font-family: "Noto Sans Bengali", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-white-200);
+    user-select: none;
+}
+#routineParentContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/bg-asset.png');
+    background-size: contain;
+}
+#routineInnerContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(60px);
+    display: grid;
+    place-content: center;
+}
+#routineMainContainer {
+    width: 900px;
+    height: 93vh;
+    background-color: rgba(29, 33, 37, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+}
+#mainRoutine {
+    margin-top: 20px;
+}
+#mainFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    background: #000000;
+}
+#middleTopContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#headerMiddleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+#middleTopContainer img {
+    width: 30px;
+    height: 30px;
+}
+#headerRightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+}
+#routineDate {
+    font-size: 12px;
+}
+.headerLeft {
+    border: 2px solid var(--text-white-200);
+    height: max-content;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+#ClassStaringDate {
+    font-size: 12px;
+}
+#logoTitle {
+    font-size: 22px;
+}
+#technology {
+    font-size: 14px;
+}
+#table1, #table2 {
+    width: 100%;
+}
+#table1 thead tr th {
+    background: var(--black-bg-600);
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#table1 thead tr th:first-child,
+#table2 thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+#table1 thead tr th:last-child,
+#table2 thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+#table1 tbody tr td {
+    text-align: center;
+    font-size: 14px;
+}
+#table1 tbody tr:first-child td {
+    background: var(--black-bg-600);
+    font-size: 13px;
+    padding: 5px;
+}
+#table1 tbody:not(tr:first-child) td {
+    background: var(--black-bg-500);
+    padding: 10px 0;
+}
+#table1 tbody:not(tr:first-child) td span {
+    font-size: 14px;
+}
+#table1 tbody tr:last-child td:first-child,
+#table2 tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+#table1 tbody tr:last-child td:last-child,
+#table2 tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* table 2 design started from here */
+#table2 {
+    margin-top: 20px;
+}
+#table2 thead tr th {
+    background: var(--black-bg-600);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 12px;
+}
+#table2 tbody tr td:nth-child(3),
+#table2 tbody tr td:nth-child(7) {
+    text-align: start;
+}
+#table2 tbody tr td {
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--black-bg-500);
+    padding: 12px;
+}
+
+#mainFooter div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footerHeader {
+    font-size: 14px;
+    font-weight: 700;
+}
+#mainFooter div p:not(:first-child) {
+    font-size: 12px;
+    color: #d6d6d6;
+}
+
